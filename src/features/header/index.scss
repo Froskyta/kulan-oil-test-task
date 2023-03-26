@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 0;
+  background: white;
+
+  .logotype {
+    width: 76px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    nav {
+      & > a:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    .separator {
+      width: 1px;
+      height: 18px;
+      background: #E0E0E0;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .contact-link {
+      color: #583899;
+    }
+
+    & > .contact-link:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

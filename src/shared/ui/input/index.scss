@@ -1,0 +1,32 @@
+.input-wrapper {
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 15px 19px;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    border-radius: 12px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+
+    &.has-icon {
+      padding-left: 52px;
+    }
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    stroke: black;
+  }
+}

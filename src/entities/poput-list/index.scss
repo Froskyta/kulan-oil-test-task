@@ -1,0 +1,30 @@
+.popup-list-wrapper {
+  position: relative;
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  ul {
+    box-sizing: border-box;
+    z-index: 99;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background: white;
+
+    li {
+      cursor: pointer;
+      padding: 20px 35px;
+      transition: .2s;
+
+      &:hover {
+        background: rgba(black, 3%);
+      }
+    }
+  }
+}

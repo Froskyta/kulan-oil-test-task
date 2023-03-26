@@ -1,0 +1,32 @@
+.switcher {
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  width: fit-content;
+
+  &-wrapper {
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+  }
+
+  & > * {
+    padding: 15px 20px;
+    background: #F6F6F6;
+    border: none;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+
+    &.active {
+      background: #FFFFFF;
+      color: #EF363C;
+    }
+  }
+}
+
+.content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 0 12px 12px 12px;
+}

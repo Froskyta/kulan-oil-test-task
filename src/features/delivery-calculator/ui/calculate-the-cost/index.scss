@@ -1,0 +1,81 @@
+.user-interactive {
+  display: flex;
+
+  .change-icon {
+    min-width: 24px;
+    min-height: 24px;
+    stroke: $red;
+    display: block;
+    margin-top: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .from-city,
+  .to-city {
+    max-width: 350px;
+  }
+
+  .submit {
+    padding: 14px 16px;
+    height: 48px;
+    width: 276px;
+    margin-left: 24px;
+  }
+}
+.chips {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  & > .chip:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .chip {
+    margin-top: 12px;
+    cursor: pointer;
+    padding: 6px 12px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+
+    background: #F6F6F6;
+    border-radius: 12px;
+
+    &.active {
+      background: $red;
+      color: white;
+    }
+  }
+}
+.calculating-data {
+  margin-top: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > * {
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+
+      svg {
+        margin-right: 8px;
+      }
+
+      b {
+        margin-left: 4px;
+      }
+    }
+  }
+}

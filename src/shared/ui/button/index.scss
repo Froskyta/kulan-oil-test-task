@@ -1,0 +1,27 @@
+button {
+  border-radius: 12px;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  &.primary {
+    background: $red;
+    color: white;
+    transition: .2s;
+
+    &:hover {
+      outline: 1px solid $red;
+      background: white;
+      color: $red;
+    }
+  }
+
+  &.secondary {
+    background: transparent;
+    color: $red;
+  }
+}
