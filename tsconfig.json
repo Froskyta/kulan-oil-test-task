@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "types": [
-      "node"
+      "node",
+      "vite-svg-loader",
+      "vite/client"
     ],
     "target": "ESNext",
     "useDefineForClassFields": true,

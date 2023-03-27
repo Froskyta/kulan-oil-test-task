@@ -16,7 +16,8 @@
           <p>
             {{ slide.description }}
           </p>
-          <TheButton @click="slide.submit.method()">
+          <TheButton v-if="slide.submit"
+                     @click="slide.submit && slide.submit.method()">
             {{ slide.submit.title }}
           </TheButton>
         </div>

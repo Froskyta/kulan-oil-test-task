@@ -1,16 +1,20 @@
 <template>
-  <button :class="[
-            typeStyle || 'primary'
-          ]"
-          :type="type">
+  <button
+      :type="type || 'button'"
+      :class="[
+        typeStyle || 'primary'
+      ]"
+  >
     <slot />
   </button>
 </template>
 
 <script lang="ts" setup>
+import {defineProps} from 'vue';
+
 defineProps<{
   typeStyle?: string
-  type?: string
+  type?: 'button' | 'submit' | 'reset'
 }>()
 </script>
 
